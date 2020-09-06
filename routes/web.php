@@ -22,4 +22,8 @@ Route::get('/test', function () {
 });
 
 
+Route::get('/kiran', function () {
+    echo 'kiran';
+});
+
 Route::get('/test/{id}', 'KhanController@test');
