@@ -21,9 +21,16 @@ Route::get('/test', function () {
     echo 'test';
 });
 
+Route::get('/abc', function () {
+    echo 'abc';
+});
 
-Route::get('/kiran', function () {
-    echo 'kiran';
+
+Route::get('/kiran', function (){
+    dd(DB::table('table1')->get());
 });
 
 Route::get('/test/{id}', 'KhanController@test');
+
+
+
